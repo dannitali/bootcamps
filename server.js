@@ -51,7 +51,7 @@ app.put('/bootcamps/:id', (req, res) =>{
 
 
 //ELIMINAR UN BOOTCAMP:
-app.delete('/bootcamps', (req, res) =>{
+app.delete('/bootcamps/:id', (req, res) =>{
     res.json({
         sucess : true, 
         msg: `aqui se eliminara un bootcamp cuyo id es : ${req.params.id}`
@@ -113,12 +113,106 @@ app.delete('/usuarios/:id', (req, res) =>{
 
 
 
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//ENPONTS REVIEWS:
+//MOSTRAR TODOS LOS REVIEWS
+app.get('/reviews', (req,res)=>{
+    res.json({
+        sucess:true,
+        msg : "aqui se mostraran todos los reviews"
+    })
+})
+
+//MOSTRAR  LOS REVIEWS POR ID
+
+app.get('/reviews/:id', (req, res)=>{
+    res.json({
+        sucess:true,
+        msg:`aqui se mostraran los reviews cuyo id es : ${req.params.id}`
+    })
+})
+
+
+//CREAR
+app.post('/reviews',(req,res)=>{
+    res.json({
+        sucess:true,
+        msg :"aqui se creara un review"
+    })
+
+})
+
+
+//ACTUALIZAR POR ID 
+
+app.put('/reviews/:id', (req, res)=>{
+    res.json({
+        sucess:true,
+        msg:`aqui se actualizara el review cuyo id es : ${req.params.id}`
+    })
+})
+
+
+//BORRAR POR ID
+
+app.delete('/reviews/:id' , (req, res) =>{
+    res.json({
+        sucess:true,
+        msg:`aqui se eliminara el review cuyo id es : ${req.params.id}`
+    })
+})
 
 
 
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//ENPONTS COURSES:
+//MOSTRAR TODOS LOS COURSES
+
+app.get('/courses', (req, res)=>{
+    res.json({
+        sucess:true,
+        msg:"Aqui se mostraran todos los courses"
+    })
+})
 
 
+//MOSTRAR SOURCES POR ID
 
+app.get('/courses/:id', (req,res)=>{
+    res.json({
+        sucess:true,
+        msg:`aqui se mostrara el courses cuyo id es : ${req.params.id} `
+    })
+})
+
+
+//CREAR courses
+
+app.post('/courses', (req,res)=>{
+    res.json({
+        sucess:true,
+        msg:"Aqui se creara el courses"
+    })
+})
+
+
+//ACTUALIZAR courses POR ID 
+
+app.put('/courses/:id', (req,res)=>{
+    res.json({
+        sucess:true,
+        msg:`Aqui se actualizara el courses cuyo id es : ${req.params.id}`
+    })
+})
+
+//ELIMINAR SOURCE
+
+app.delete('/courses/:id', (req,res)=>{
+    res.json({
+        sucess:true,
+        msg:`Aqui se eliminara el course cuyo id es : ${req.params.id}`
+    })
+})
 
 
 

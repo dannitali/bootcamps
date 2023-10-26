@@ -1,0 +1,79 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "courses",
+    "dateExported": "2023-10-26T02:24:03.386Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b71ece10-3db4-4063-8cc2-6c8c89047166",
+            "colId": "cab93144-f91d-4e6a-b795-3e34b5aa196b",
+            "containerId": "",
+            "name": "ver todos los courses",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-25T21:05:55.561Z",
+            "modified": "2023-10-26T02:11:02.552Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "91b61c5e-d7dd-4a85-a085-d4f8850cd025",
+            "colId": "cab93144-f91d-4e6a-b795-3e34b5aa196b",
+            "containerId": "",
+            "name": "ver courses por id",
+            "url": "http://127.0.0.1:5000/courses/26",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-26T02:11:44.154Z",
+            "modified": "2023-10-26T02:12:15.661Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "437918b6-e740-46cc-8837-06e6bf7e9a60",
+            "colId": "cab93144-f91d-4e6a-b795-3e34b5aa196b",
+            "containerId": "",
+            "name": "crear courses",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-26T02:12:28.465Z",
+            "modified": "2023-10-26T02:12:37.303Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0458b4b4-5a87-4233-b265-7b529c7ed305",
+            "colId": "cab93144-f91d-4e6a-b795-3e34b5aa196b",
+            "containerId": "",
+            "name": "actualizar couse por id",
+            "url": "http://127.0.0.1:5000/courses/26",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-26T02:12:57.884Z",
+            "modified": "2023-10-26T02:13:06.034Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3172d057-d254-481e-96b1-93794445b850",
+            "colId": "cab93144-f91d-4e6a-b795-3e34b5aa196b",
+            "containerId": "",
+            "name": "eliminar course por id",
+            "url": "http://127.0.0.1:5000/courses/26",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-10-26T02:13:21.342Z",
+            "modified": "2023-10-26T02:13:33.267Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

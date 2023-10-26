@@ -1,0 +1,79 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "reviews",
+    "dateExported": "2023-10-26T02:23:34.362Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cd0081b3-9c15-4bf8-a96a-0d017e9035e2",
+            "colId": "cd92b013-63c6-413a-ac30-6b6485c2bcca",
+            "containerId": "",
+            "name": "eliminar review por id ",
+            "url": "http://127.0.0.1:5000/reviews/26",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2023-10-25T21:05:07.073Z",
+            "modified": "2023-10-25T21:05:07.073Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18c17e17-78be-4de8-aa39-d1f1b5449896",
+            "colId": "cd92b013-63c6-413a-ac30-6b6485c2bcca",
+            "containerId": "",
+            "name": "actualizar review por id ",
+            "url": "http://127.0.0.1:5000/reviews/26",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-10-25T21:05:15.192Z",
+            "modified": "2023-10-25T21:05:15.192Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d7fc488d-73c5-48c5-ad2e-4d056d8dddb8",
+            "colId": "cd92b013-63c6-413a-ac30-6b6485c2bcca",
+            "containerId": "",
+            "name": "crear un review",
+            "url": "http://127.0.0.1:5000/reviews",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-25T21:05:19.832Z",
+            "modified": "2023-10-25T21:05:19.832Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ae0b97a7-a1fa-4ef3-8d43-0af1db59bc9c",
+            "colId": "cd92b013-63c6-413a-ac30-6b6485c2bcca",
+            "containerId": "",
+            "name": "reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/26",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-10-25T21:05:24.656Z",
+            "modified": "2023-10-25T21:05:24.656Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1dd03808-37f0-4c63-b7c0-9e564fc79999",
+            "colId": "cd92b013-63c6-413a-ac30-6b6485c2bcca",
+            "containerId": "",
+            "name": "todos los reviews",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-25T21:05:28.672Z",
+            "modified": "2023-10-25T21:05:28.672Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
