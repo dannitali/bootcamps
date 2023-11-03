@@ -1,64 +1,36 @@
 const express= require('express')
 const dotenv = require('dotenv')
 const color=require('colors')
+const conectarBD=require('./config/db')
+
+
+//dependencias de rutas 
+const bootcampRoutes = require('./routes/bootcampsRoutes')
+
 
 
 //vincular el archivo .env
-
 dotenv.config(
     {path : './config/.env'} // el ./ nos permite ingresar a una carpeta desde la raiz
 )
-//construir el objeto de la aplicacion app:
-app = express()
+
+
+//CONEXION  LA BD
+conectarBD() //invocamos la funcion 
+
+//construir objeto app
+const app = express()
+app.use(express.json())
+
+//conectar las rutas al objeto app
+app.use('/api/v1/devcamp/bootcamps',
+bootcampRoutes)
+
 
 
 
 //RUTAS DE BOOTCAMPS:
 //enpoint 
-app.get('/bootcamps', (req, res) =>{
-    res.json({
-        sucess : true, 
-        msg: "aqui se mostraran todos los bootcamps"
-    })
-})
-
-//traer un bootcampo por id 
-//enpoint 
-app.get('/bootcamps/:id', (req, res) =>{
-    res.json({
-        sucess : true, 
-        msg:`aqui se mostraran bootcampsc cuyo id es ${req.params.id}`
-    })
-})
-
-
-//CREAR UN BOOTCAMPS:
-app.post('/bootcamps', (req, res) =>{
-    res.json({
-        sucess : true, 
-        msg: "aqui se creara un bootcamp"
-    })
-})
-
-
-//ACTUALIZAR UN BOOTCAMP POR ID
-app.put('/bootcamps/:id', (req, res) =>{
-    res.json({
-        sucess : true, 
-        msg:`aqui se editar el bootcampsc cuyo id es ${req.params.id}`
-    })
-})
-
-
-//ELIMINAR UN BOOTCAMP:
-app.delete('/bootcamps/:id', (req, res) =>{
-    res.json({
-        sucess : true, 
-        msg: `aqui se eliminara un bootcamp cuyo id es : ${req.params.id}`
-    })
-})
-
-
 
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
@@ -213,8 +185,6 @@ app.delete('/courses/:id', (req,res)=>{
         msg:`Aqui se eliminara el course cuyo id es : ${req.params.id}`
     })
 })
-
-
 
 
 
